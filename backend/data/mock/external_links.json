@@ -1,0 +1,218 @@
+{
+  "hanoi": {
+    "keywords": ["hà nội", "hanoi", "thủ đô", "capital", "phở", "pho", "hồ hoàn kiếm", "old quarter"],
+    "links": [
+      {
+        "title": "Hà Nội trên Google Maps",
+        "url": "https://maps.google.com/?q=Hanoi,Vietnam",
+        "type": "Map"
+      },
+      {
+        "title": "Hanoi Tourism - Official Website",
+        "url": "https://www.hanoitourism.gov.vn",
+        "type": "Website"
+      },
+      {
+        "title": "Top 10 Things to Do in Hanoi (YouTube)",
+        "url": "https://www.youtube.com/results?search_query=hanoi+travel+guide",
+        "type": "Video"
+      },
+      {
+        "title": "Hanoi Travel Guide - Lonely Planet",
+        "url": "https://www.lonelyplanet.com/vietnam/hanoi",
+        "type": "Blog"
+      }
+    ]
+  },
+  "halong": {
+    "keywords": ["hạ long", "halong", "vịnh", "bay", "du thuyền", "cruise"],
+    "links": [
+      {
+        "title": "Vịnh Hạ Long trên Google Maps",
+        "url": "https://maps.google.com/?q=Ha+Long+Bay,Vietnam",
+        "type": "Map"
+      },
+      {
+        "title": "Ha Long Bay Cruises Official",
+        "url": "https://www.halongbaycruises.com",
+        "type": "Website"
+      },
+      {
+        "title": "Ha Long Bay Drone Video (YouTube)",
+        "url": "https://www.youtube.com/results?search_query=ha+long+bay+drone",
+        "type": "Video"
+      },
+      {
+        "title": "Ha Long Bay UNESCO World Heritage",
+        "url": "https://whc.unesco.org/en/list/672/",
+        "type": "Website"
+      }
+    ]
+  },
+  "sapa": {
+    "keywords": ["sa pa", "sapa", "ruộng bậc thang", "terraced", "fansipan", "núi", "mountain"],
+    "links": [
+      {
+        "title": "Sa Pa trên Google Maps",
+        "url": "https://maps.google.com/?q=Sapa,Vietnam",
+        "type": "Map"
+      },
+      {
+        "title": "Sapa Tourism Information",
+        "url": "https://www.sapa-tourism.com",
+        "type": "Website"
+      },
+      {
+        "title": "Sapa Trekking Guide (YouTube)",
+        "url": "https://www.youtube.com/results?search_query=sapa+trekking",
+        "type": "Video"
+      },
+      {
+        "title": "Fansipan Cable Car",
+        "url": "https://www.sunworld.vn/en/fansipan",
+        "type": "Website"
+      }
+    ]
+  },
+  "hoian": {
+    "keywords": ["hội an", "hoian", "hoi an", "phố cổ", "ancient town", "đèn lồng", "lantern"],
+    "links": [
+      {
+        "title": "Hội An trên Google Maps",
+        "url": "https://maps.google.com/?q=Hoi+An,Vietnam",
+        "type": "Map"
+      },
+      {
+        "title": "Hoi An World Heritage",
+        "url": "https://hoianworldheritage.org.vn/en",
+        "type": "Website"
+      },
+      {
+        "title": "Hoi An Ancient Town Tour (YouTube)",
+        "url": "https://www.youtube.com/results?search_query=hoi+an+ancient+town",
+        "type": "Video"
+      },
+      {
+        "title": "Hoi An Travel Guide - TripAdvisor",
+        "url": "https://www.tripadvisor.com/Tourism-g298082-Hoi_An_Quang_Nam_Province-Vacations.html",
+        "type": "Blog"
+      }
+    ]
+  },
+  "phuquoc": {
+    "keywords": ["phú quốc", "phu quoc", "đảo", "island", "biển", "beach"],
+    "links": [
+      {
+        "title": "Phú Quốc trên Google Maps",
+        "url": "https://maps.google.com/?q=Phu+Quoc,Vietnam",
+        "type": "Map"
+      },
+      {
+        "title": "Phu Quoc Tourism",
+        "url": "https://phuquoc.gov.vn",
+        "type": "Website"
+      },
+      {
+        "title": "Phu Quoc Island Guide (YouTube)",
+        "url": "https://www.youtube.com/results?search_query=phu+quoc+island",
+        "type": "Video"
+      },
+      {
+        "title": "VinWonders Phu Quoc",
+        "url": "https://www.vinwonders.com/en/vinwonders-phu-quoc/",
+        "type": "Website"
+      }
+    ]
+  },
+  "danang": {
+    "keywords": ["đà nẵng", "da nang", "danang", "bà nà", "bana", "cầu vàng", "golden bridge"],
+    "links": [
+      {
+        "title": "Đà Nẵng trên Google Maps",
+        "url": "https://maps.google.com/?q=Da+Nang,Vietnam",
+        "type": "Map"
+      },
+      {
+        "title": "Da Nang Tourism",
+        "url": "https://tourism.danang.gov.vn",
+        "type": "Website"
+      },
+      {
+        "title": "Golden Bridge Ba Na Hills (YouTube)",
+        "url": "https://www.youtube.com/results?search_query=golden+bridge+vietnam",
+        "type": "Video"
+      },
+      {
+        "title": "Ba Na Hills Official",
+        "url": "https://www.banahills.sunworld.vn/en",
+        "type": "Website"
+      }
+    ]
+  },
+  "saigon": {
+    "keywords": ["sài gòn", "saigon", "hồ chí minh", "ho chi minh", "hcm", "tphcm"],
+    "links": [
+      {
+        "title": "TP. Hồ Chí Minh trên Google Maps",
+        "url": "https://maps.google.com/?q=Ho+Chi+Minh+City,Vietnam",
+        "type": "Map"
+      },
+      {
+        "title": "Ho Chi Minh City Tourism",
+        "url": "https://www.thanhnien.vn/du-lich",
+        "type": "Website"
+      },
+      {
+        "title": "Saigon Street Food Tour (YouTube)",
+        "url": "https://www.youtube.com/results?search_query=saigon+street+food",
+        "type": "Video"
+      },
+      {
+        "title": "Cu Chi Tunnels",
+        "url": "https://www.dinhdoclap.gov.vn",
+        "type": "Website"
+      }
+    ]
+  },
+  "food": {
+    "keywords": ["ẩm thực", "food", "món ăn", "dish", "quán", "restaurant", "phở", "bún", "bánh"],
+    "links": [
+      {
+        "title": "Vietnamese Food Guide (YouTube)",
+        "url": "https://www.youtube.com/results?search_query=vietnamese+food+guide",
+        "type": "Video"
+      },
+      {
+        "title": "Best Restaurants in Vietnam - TripAdvisor",
+        "url": "https://www.tripadvisor.com/Restaurants-g293921-Vietnam.html",
+        "type": "Blog"
+      },
+      {
+        "title": "Vietnamese Cuisine - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Vietnamese_cuisine",
+        "type": "Website"
+      }
+    ]
+  },
+  "general": {
+    "keywords": ["vietnam", "việt nam", "du lịch", "travel", "tour"],
+    "links": [
+      {
+        "title": "Vietnam Tourism Official",
+        "url": "https://www.vietnam.travel",
+        "type": "Website"
+      },
+      {
+        "title": "Vietnam Travel Guide (YouTube)",
+        "url": "https://www.youtube.com/results?search_query=vietnam+travel+guide+2024",
+        "type": "Video"
+      },
+      {
+        "title": "Vietnam on Instagram",
+        "url": "https://www.instagram.com/explore/tags/vietnamtravel/",
+        "type": "Social"
+      }
+    ]
+  }
+}
+

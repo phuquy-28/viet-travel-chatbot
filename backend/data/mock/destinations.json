@@ -1,0 +1,267 @@
+[
+  {
+    "id": "hanoi",
+    "name": "Hà Nội",
+    "name_en": "Hanoi",
+    "region": "north",
+    "type": ["city", "culture", "food"],
+    "description": "Thủ đô ngàn năm văn hiến với kiến trúc cổ kính, văn hóa đậm đà và ẩm thực phong phú",
+    "description_en": "Millennial capital with ancient architecture, rich culture and diverse cuisine",
+    "image_url": "https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=800",
+    "highlights": [
+      "Hồ Hoàn Kiếm",
+      "Phố Cổ 36 phố phường",
+      "Văn Miếu - Quốc Tử Giám",
+      "Ẩm thực đường phố"
+    ],
+    "highlights_en": [
+      "Hoan Kiem Lake",
+      "36 Streets Old Quarter",
+      "Temple of Literature",
+      "Street food"
+    ]
+  },
+  {
+    "id": "halong",
+    "name": "Vịnh Hạ Long",
+    "name_en": "Ha Long Bay",
+    "region": "north",
+    "type": ["beach", "nature", "adventure"],
+    "description": "Di sản thiên nhiên thế giới với hàng nghìn đảo đá vôi kỳ thú",
+    "description_en": "Natural world heritage with thousands of spectacular limestone islands",
+    "image_url": "https://images.unsplash.com/photo-1528127269322-539801943592?w=800",
+    "highlights": [
+      "Du thuyền qua đêm",
+      "Hang Sửng Sốt",
+      "Chèo kayak",
+      "Làng chài Cửa Vạn"
+    ],
+    "highlights_en": [
+      "Overnight cruise",
+      "Sung Sot Cave",
+      "Kayaking",
+      "Cua Van Floating Village"
+    ]
+  },
+  {
+    "id": "sapa",
+    "name": "Sa Pa",
+    "name_en": "Sapa",
+    "region": "north",
+    "type": ["mountain", "nature", "culture"],
+    "description": "Thị trấn miền núi với ruộng bậc thang tuyệt đẹp và văn hóa dân tộc đa dạng",
+    "description_en": "Mountain town with stunning terraced rice fields and diverse ethnic culture",
+    "image_url": "https://images.unsplash.com/photo-1583759582048-67e7d7e5b3e1?w=800",
+    "highlights": [
+      "Ruộng bậc thang",
+      "Đỉnh Fansipan",
+      "Làng Cát Cát",
+      "Chợ phiên"
+    ],
+    "highlights_en": [
+      "Terraced rice fields",
+      "Fansipan Summit",
+      "Cat Cat Village",
+      "Local markets"
+    ]
+  },
+  {
+    "id": "hoian",
+    "name": "Hội An",
+    "name_en": "Hoi An",
+    "region": "central",
+    "type": ["culture", "beach", "food"],
+    "description": "Phố cổ di sản thế giới với đèn lồng rực rỡ và kiến trúc cổ kính",
+    "description_en": "Ancient world heritage town with colorful lanterns and historic architecture",
+    "image_url": "https://images.unsplash.com/photo-1559592413-7cec4f0e2e9e?w=800",
+    "highlights": [
+      "Phố cổ Hội An",
+      "Cầu Nhật Bản",
+      "Rừng dừa Bảy Mẫu",
+      "Cao lầu & bánh mì"
+    ],
+    "highlights_en": [
+      "Ancient Town",
+      "Japanese Bridge",
+      "Bay Mau Coconut Forest",
+      "Cao Lau & Banh Mi"
+    ]
+  },
+  {
+    "id": "danang",
+    "name": "Đà Nẵng",
+    "name_en": "Da Nang",
+    "region": "central",
+    "type": ["city", "beach", "adventure"],
+    "description": "Thành phố biển năng động với cầu hiện đại và bãi biển tuyệt đẹp",
+    "description_en": "Dynamic coastal city with modern bridges and stunning beaches",
+    "image_url": "https://images.unsplash.com/photo-1559592413-c47e5fc81c88?w=800",
+    "highlights": [
+      "Cầu Rồng",
+      "Bãi biển Mỹ Khê",
+      "Bà Nà Hills",
+      "Ngũ Hành Sơn"
+    ],
+    "highlights_en": [
+      "Dragon Bridge",
+      "My Khe Beach",
+      "Ba Na Hills",
+      "Marble Mountains"
+    ]
+  },
+  {
+    "id": "hue",
+    "name": "Huế",
+    "name_en": "Hue",
+    "region": "central",
+    "type": ["culture", "history"],
+    "description": "Cố đô Việt Nam với di sản hoàng cung và ẩm thực cung đình",
+    "description_en": "Ancient capital of Vietnam with imperial heritage and royal cuisine",
+    "image_url": "https://images.unsplash.com/photo-1583417319870-1452b9b8a0b8?w=800",
+    "highlights": [
+      "Đại Nội",
+      "Lăng Khải Định",
+      "Sông Hương",
+      "Bún bò Huế"
+    ],
+    "highlights_en": [
+      "Imperial City",
+      "Khai Dinh Tomb",
+      "Perfume River",
+      "Bun Bo Hue"
+    ]
+  },
+  {
+    "id": "nhatrang",
+    "name": "Nha Trang",
+    "name_en": "Nha Trang",
+    "region": "central",
+    "type": ["beach", "adventure"],
+    "description": "Thành phố biển với bãi tắm đẹp và các hoạt động thể thao nước",
+    "description_en": "Coastal city with beautiful beaches and water sports activities",
+    "image_url": "https://images.unsplash.com/photo-1583417319870-4a69db38a482?w=800",
+    "highlights": [
+      "Bãi biển Nha Trang",
+      "Vinpearl Land",
+      "Tháp Bà Ponagar",
+      "Lặn biển"
+    ],
+    "highlights_en": [
+      "Nha Trang Beach",
+      "Vinpearl Land",
+      "Po Nagar Towers",
+      "Scuba diving"
+    ]
+  },
+  {
+    "id": "dalat",
+    "name": "Đà Lạt",
+    "name_en": "Da Lat",
+    "region": "central",
+    "type": ["mountain", "nature", "city"],
+    "description": "Thành phố sương mù với khí hậu mát mẻ và thác nước tuyệt đẹp",
+    "description_en": "Foggy city with cool climate and beautiful waterfalls",
+    "image_url": "https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=800",
+    "highlights": [
+      "Hồ Xuân Hương",
+      "Thác Datanla",
+      "Vườn hoa",
+      "Cà phê rang xay"
+    ],
+    "highlights_en": [
+      "Xuan Huong Lake",
+      "Datanla Waterfall",
+      "Flower gardens",
+      "Fresh coffee"
+    ]
+  },
+  {
+    "id": "saigon",
+    "name": "TP. Hồ Chí Minh",
+    "name_en": "Ho Chi Minh City",
+    "region": "south",
+    "type": ["city", "culture", "food"],
+    "description": "Thành phố năng động nhất Việt Nam với đời sống sôi động và ẩm thực đa dạng",
+    "description_en": "Vietnam's most dynamic city with vibrant life and diverse cuisine",
+    "image_url": "https://images.unsplash.com/photo-1583417319070-4a69db38a123?w=800",
+    "highlights": [
+      "Dinh Độc Lập",
+      "Chợ Bến Thành",
+      "Phố Tây Bùi Viện",
+      "Ẩm thực Sài Gòn"
+    ],
+    "highlights_en": [
+      "Independence Palace",
+      "Ben Thanh Market",
+      "Bui Vien Street",
+      "Saigon cuisine"
+    ]
+  },
+  {
+    "id": "phuquoc",
+    "name": "Phú Quốc",
+    "name_en": "Phu Quoc",
+    "region": "south",
+    "type": ["beach", "island", "adventure"],
+    "description": "Đảo ngọc với bãi biển đẹp nhất Việt Nam và hải sản tươi ngon",
+    "description_en": "Pearl island with Vietnam's most beautiful beaches and fresh seafood",
+    "image_url": "https://images.unsplash.com/photo-1559592413-7cec4f0e2e9e?w=800",
+    "highlights": [
+      "Bãi Sao",
+      "Vinpearl Safari",
+      "Cáp treo Hòn Thơm",
+      "Nước mắm Phú Quốc"
+    ],
+    "highlights_en": [
+      "Sao Beach",
+      "Vinpearl Safari",
+      "Hon Thom Cable Car",
+      "Phu Quoc fish sauce"
+    ]
+  },
+  {
+    "id": "cantho",
+    "name": "Cần Thơ",
+    "name_en": "Can Tho",
+    "region": "south",
+    "type": ["culture", "nature"],
+    "description": "Thủ phủ miền Tây với chợ nổi và vườn trái cây",
+    "description_en": "Capital of Mekong Delta with floating markets and fruit gardens",
+    "image_url": "https://images.unsplash.com/photo-1583417319070-4a69db38a456?w=800",
+    "highlights": [
+      "Chợ nổi Cái Răng",
+      "Vườn cò Bằng Lăng",
+      "Du thuyền sông Hậu",
+      "Trái cây tươi"
+    ],
+    "highlights_en": [
+      "Cai Rang Floating Market",
+      "Bang Lang Stork Garden",
+      "Hau River cruise",
+      "Fresh fruits"
+    ]
+  },
+  {
+    "id": "vungtau",
+    "name": "Vũng Tàu",
+    "name_en": "Vung Tau",
+    "region": "south",
+    "type": ["beach", "city"],
+    "description": "Thành phố biển gần Sài Gòn, lý tưởng cho chuyến du lịch cuối tuần",
+    "description_en": "Coastal city near Saigon, ideal for weekend trips",
+    "image_url": "https://images.unsplash.com/photo-1559592413-7cec4f0e2e9e?w=800",
+    "highlights": [
+      "Tượng Chúa Kitô",
+      "Bãi Sau",
+      "Núi Nhỏ",
+      "Hải sản tươi"
+    ],
+    "highlights_en": [
+      "Christ Statue",
+      "Back Beach",
+      "Small Mountain",
+      "Fresh seafood"
+    ]
+  }
+]
+
