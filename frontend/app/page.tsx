@@ -1,21 +1,21 @@
 "use client"
-import { useState, useEffect } from "react"
+import { useState, useEffect, Suspense, useCallback } from "react"
 import { useSearchParams, useRouter } from "next/navigation"
 import { useLanguage } from "@/contexts/language-context"
 import Sidebar from "@/components/sidebar"
 import ChatArea from "@/components/chat-area"
 import DestinationsModal from "@/components/destinations-modal"
 
-export default function Home() {
-  const [activeConversationId, setActiveConversationId] = useState<string | undefined>()
-  const [initialMessage, setInitialMessage] = useState<string | undefined>()
-  const [isDestinationsModalOpen, setIsDestinationsModalOpen] = useState(false)
-  const [isSidebarOpen, setIsSidebarOpen] = useState(true)
+// Component that handles search params - must be wrapped in Suspense
+function DestinationHandler({ 
+  onDestinationFound 
+}: { 
+  onDestinationFound: (message: string) => void 
+}) {
   const searchParams = useSearchParams()
   const router = useRouter()
   const { language } = useLanguage()
 
-  // Check for destination query param
   useEffect(() => {
     const destination = searchParams.get('destination')
     if (destination) {
@@ -24,14 +24,22 @@ export default function Home() {
         ? `Giới thiệu cho tôi về ${destination}. Những điểm tham quan nổi bật, ẩm thực đặc sản, và kinh nghiệm du lịch ở đây là gì?`
         : `Tell me about ${destination}. What are the top attractions, local cuisine, and travel experiences there?`
       
-      setInitialMessage(message)
-      // Clear conversation to start fresh
-      setActiveConversationId(undefined)
+      onDestinationFound(message)
       
       // Remove destination param from URL to prevent re-triggering on language change/reload
       router.replace('/', { scroll: false })
     }
-  }, [searchParams, language, router])
+  }, [searchParams, language, router, onDestinationFound])
+
+  return null
+}
+
+export default function Home() {
+  const [activeConversationId, setActiveConversationId] = useState<string | undefined>()
+  const [initialMessage, setInitialMessage] = useState<string | undefined>()
+  const [isDestinationsModalOpen, setIsDestinationsModalOpen] = useState(false)
+  const [isSidebarOpen, setIsSidebarOpen] = useState(true)
+  const { language } = useLanguage()
 
   const handleConversationSelect = (conversationId: string) => {
     setActiveConversationId(conversationId)
@@ -69,8 +77,18 @@ export default function Home() {
     setIsSidebarOpen(!isSidebarOpen)
   }
 
+  const handleDestinationFound = useCallback((message: string) => {
+    setInitialMessage(message)
+    setActiveConversationId(undefined)
+  }, [])
+
   return (
     <div className="flex h-screen bg-background">
+      <Suspense fallback={null}>
+        <DestinationHandler 
+          onDestinationFound={handleDestinationFound}
+        />
+      </Suspense>
       <Sidebar 
         onConversationSelect={handleConversationSelect}
         onNewChat={handleNewChat}
