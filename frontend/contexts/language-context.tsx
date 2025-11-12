@@ -28,6 +28,9 @@ const translations = {
     cancel: "Hủy",
     delete: "Xóa",
     conversationDeleted: "Đã xóa cuộc trò chuyện",
+    startChat: "Bắt đầu chat",
+    learnMore: "Tìm hiểu thêm",
+    askAbout: "Hỏi về",
   },
   en: {
     newChat: "New Chat",
@@ -46,6 +49,9 @@ const translations = {
     cancel: "Cancel",
     delete: "Delete",
     conversationDeleted: "Conversation deleted",
+    startChat: "Start Chat",
+    learnMore: "Learn More",
+    askAbout: "Ask about",
   },
 }
 

@@ -1,19 +1,19 @@
 "use client"
 
-import { useState, useEffect, useRef } from "react"
+import { useState, useEffect } from "react"
 import { Plus, MessageSquare, Compass, Settings, Loader2, Trash2, MoreVertical } from "lucide-react"
 import { useLanguage } from "@/contexts/language-context"
 import LanguageToggle from "./language-toggle"
 import { apiClient, type ConversationSummary } from "@/lib/api-client"
-import Link from "next/link"
 
 interface SidebarProps {
   onConversationSelect?: (conversationId: string) => void
   onNewChat?: () => void
   activeConversationId?: string
+  onOpenDestinations?: () => void
 }
 
-export default function Sidebar({ onConversationSelect, onNewChat, activeConversationId }: SidebarProps) {
+export default function Sidebar({ onConversationSelect, onNewChat, activeConversationId, onOpenDestinations }: SidebarProps) {
   const [conversations, setConversations] = useState<ConversationSummary[]>([])
   const [isLoading, setIsLoading] = useState(false)
   const [deletingId, setDeletingId] = useState<string | null>(null)
@@ -184,13 +184,13 @@ export default function Sidebar({ onConversationSelect, onNewChat, activeConvers
 
       {/* Footer */}
       <div className="p-4 border-t border-sidebar-border space-y-3">
-        <Link 
-          href="/destinations"
+        <button 
+          onClick={onOpenDestinations}
           className="w-full flex items-center gap-3 px-3 py-2 rounded-lg text-sm text-sidebar-foreground hover:bg-sidebar-accent transition"
         >
           <Compass size={18} />
           <span>{t("exploreDestinations")}</span>
-        </Link>
+        </button>
         <div className="flex items-center justify-between px-3 py-2">
           <span className="text-xs font-medium text-sidebar-foreground">{t("language")}</span>
           <LanguageToggle />

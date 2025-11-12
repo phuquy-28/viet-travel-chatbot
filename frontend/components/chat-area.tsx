@@ -15,25 +15,37 @@ interface Message extends ChatMessageType {
 interface ChatAreaProps {
   conversationId?: string
   onConversationChange?: (id: string) => void
+  initialMessage?: string
 }
 
-export default function ChatArea({ conversationId, onConversationChange }: ChatAreaProps) {
+export default function ChatArea({ conversationId, onConversationChange, initialMessage }: ChatAreaProps) {
   const [messages, setMessages] = useState<Message[]>([])
   const [input, setInput] = useState("")
   const [isLoading, setIsLoading] = useState(false)
   const { t, language } = useLanguage()
   const [currentConversationId, setCurrentConversationId] = useState<string | undefined>(conversationId)
+  const [hasAutoSent, setHasAutoSent] = useState(false)
 
   // Load conversation when conversationId changes
   useEffect(() => {
     if (conversationId && conversationId !== currentConversationId) {
       loadConversation(conversationId)
+      setHasAutoSent(false) // Reset auto-send flag when loading conversation
     } else if (!conversationId && currentConversationId) {
       // Reset to new chat when conversationId becomes undefined
       setMessages([])
       setCurrentConversationId(undefined)
+      setHasAutoSent(false) // Reset auto-send flag
     }
   }, [conversationId])
+
+  // Auto-send initial message
+  useEffect(() => {
+    if (initialMessage && !hasAutoSent && !isLoading && messages.length === 0) {
+      setHasAutoSent(true)
+      handleSend(initialMessage)
+    }
+  }, [initialMessage, hasAutoSent, isLoading, messages.length])
 
   const loadConversation = async (id: string) => {
     try {

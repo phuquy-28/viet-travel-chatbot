@@ -7,7 +7,7 @@
     "type": ["city", "culture", "food"],
     "description": "Thủ đô ngàn năm văn hiến với kiến trúc cổ kính, văn hóa đậm đà và ẩm thực phong phú",
     "description_en": "Millennial capital with ancient architecture, rich culture and diverse cuisine",
-    "image_url": "https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=800",
+    "image_url": "https://images.unsplash.com/photo-1623655963856-e9d3da3a4d84?w=800&auto=format&fit=crop",
     "highlights": [
       "Hồ Hoàn Kiếm",
       "Phố Cổ 36 phố phường",
@@ -29,7 +29,7 @@
     "type": ["beach", "nature", "adventure"],
     "description": "Di sản thiên nhiên thế giới với hàng nghìn đảo đá vôi kỳ thú",
     "description_en": "Natural world heritage with thousands of spectacular limestone islands",
-    "image_url": "https://images.unsplash.com/photo-1528127269322-539801943592?w=800",
+    "image_url": "https://images.unsplash.com/photo-1528127269322-539801943592?w=800&auto=format&fit=crop",
     "highlights": [
       "Du thuyền qua đêm",
       "Hang Sửng Sốt",
@@ -51,7 +51,7 @@
     "type": ["mountain", "nature", "culture"],
     "description": "Thị trấn miền núi với ruộng bậc thang tuyệt đẹp và văn hóa dân tộc đa dạng",
     "description_en": "Mountain town with stunning terraced rice fields and diverse ethnic culture",
-    "image_url": "https://images.unsplash.com/photo-1583759582048-67e7d7e5b3e1?w=800",
+    "image_url": "https://images.unsplash.com/photo-1583759582048-67e7d7e5b3e1?w=800&auto=format&fit=crop",
     "highlights": [
       "Ruộng bậc thang",
       "Đỉnh Fansipan",
@@ -73,7 +73,7 @@
     "type": ["culture", "beach", "food"],
     "description": "Phố cổ di sản thế giới với đèn lồng rực rỡ và kiến trúc cổ kính",
     "description_en": "Ancient world heritage town with colorful lanterns and historic architecture",
-    "image_url": "https://images.unsplash.com/photo-1559592413-7cec4f0e2e9e?w=800",
+    "image_url": "https://images.unsplash.com/photo-1559592413-7cec4f0e2e9e?w=800&auto=format&fit=crop",
     "highlights": [
       "Phố cổ Hội An",
       "Cầu Nhật Bản",
@@ -95,7 +95,7 @@
     "type": ["city", "beach", "adventure"],
     "description": "Thành phố biển năng động với cầu hiện đại và bãi biển tuyệt đẹp",
     "description_en": "Dynamic coastal city with modern bridges and stunning beaches",
-    "image_url": "https://images.unsplash.com/photo-1559592413-c47e5fc81c88?w=800",
+    "image_url": "https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=800&auto=format&fit=crop",
     "highlights": [
       "Cầu Rồng",
       "Bãi biển Mỹ Khê",
@@ -117,7 +117,7 @@
     "type": ["culture", "history"],
     "description": "Cố đô Việt Nam với di sản hoàng cung và ẩm thực cung đình",
     "description_en": "Ancient capital of Vietnam with imperial heritage and royal cuisine",
-    "image_url": "https://images.unsplash.com/photo-1583417319870-1452b9b8a0b8?w=800",
+    "image_url": "https://images.unsplash.com/photo-1583417319870-1452b9b8a0b8?w=800&auto=format&fit=crop",
     "highlights": [
       "Đại Nội",
       "Lăng Khải Định",
@@ -139,7 +139,7 @@
     "type": ["beach", "adventure"],
     "description": "Thành phố biển với bãi tắm đẹp và các hoạt động thể thao nước",
     "description_en": "Coastal city with beautiful beaches and water sports activities",
-    "image_url": "https://images.unsplash.com/photo-1583417319870-4a69db38a482?w=800",
+    "image_url": "https://images.unsplash.com/photo-1559628376-f3fe5f782a2e?w=800&auto=format&fit=crop",
     "highlights": [
       "Bãi biển Nha Trang",
       "Vinpearl Land",
@@ -161,7 +161,7 @@
     "type": ["mountain", "nature", "city"],
     "description": "Thành phố sương mù với khí hậu mát mẻ và thác nước tuyệt đẹp",
     "description_en": "Foggy city with cool climate and beautiful waterfalls",
-    "image_url": "https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=800",
+    "image_url": "https://images.unsplash.com/photo-1598074993091-e5a8876f2c36?w=800&auto=format&fit=crop",
     "highlights": [
       "Hồ Xuân Hương",
       "Thác Datanla",
@@ -183,7 +183,7 @@
     "type": ["city", "culture", "food"],
     "description": "Thành phố năng động nhất Việt Nam với đời sống sôi động và ẩm thực đa dạng",
     "description_en": "Vietnam's most dynamic city with vibrant life and diverse cuisine",
-    "image_url": "https://images.unsplash.com/photo-1583417319070-4a69db38a123?w=800",
+    "image_url": "https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=800&auto=format&fit=crop",
     "highlights": [
       "Dinh Độc Lập",
       "Chợ Bến Thành",
@@ -205,7 +205,7 @@
     "type": ["beach", "island", "adventure"],
     "description": "Đảo ngọc với bãi biển đẹp nhất Việt Nam và hải sản tươi ngon",
     "description_en": "Pearl island with Vietnam's most beautiful beaches and fresh seafood",
-    "image_url": "https://images.unsplash.com/photo-1559592413-7cec4f0e2e9e?w=800",
+    "image_url": "https://images.unsplash.com/photo-1583417269056-4a7b99a75b6e?w=800&auto=format&fit=crop",
     "highlights": [
       "Bãi Sao",
       "Vinpearl Safari",
@@ -227,7 +227,7 @@
     "type": ["culture", "nature"],
     "description": "Thủ phủ miền Tây với chợ nổi và vườn trái cây",
     "description_en": "Capital of Mekong Delta with floating markets and fruit gardens",
-    "image_url": "https://images.unsplash.com/photo-1583417319070-4a69db38a456?w=800",
+    "image_url": "https://images.unsplash.com/photo-1587899897387-091ebd01a6b2?w=800&auto=format&fit=crop",
     "highlights": [
       "Chợ nổi Cái Răng",
       "Vườn cò Bằng Lăng",
@@ -249,7 +249,7 @@
     "type": ["beach", "city"],
     "description": "Thành phố biển gần Sài Gòn, lý tưởng cho chuyến du lịch cuối tuần",
     "description_en": "Coastal city near Saigon, ideal for weekend trips",
-    "image_url": "https://images.unsplash.com/photo-1559592413-7cec4f0e2e9e?w=800",
+    "image_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&auto=format&fit=crop",
     "highlights": [
       "Tượng Chúa Kitô",
       "Bãi Sau",

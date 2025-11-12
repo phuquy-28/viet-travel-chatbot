@@ -3,11 +3,13 @@
 import { useState, useEffect } from "react"
 import { useLanguage } from "@/contexts/language-context"
 import { apiClient, type Destination } from "@/lib/api-client"
-import { MapPin, Loader2, ArrowLeft } from "lucide-react"
+import { MapPin, Loader2, ArrowLeft, MessageCircle } from "lucide-react"
 import Link from "next/link"
+import { useRouter } from "next/navigation"
 
 export default function DestinationsPage() {
   const { language, t } = useLanguage()
+  const router = useRouter()
   const [destinations, setDestinations] = useState<Destination[]>([])
   const [filteredDestinations, setFilteredDestinations] = useState<Destination[]>([])
   const [isLoading, setIsLoading] = useState(true)
@@ -64,6 +66,12 @@ export default function DestinationsPage() {
     { value: "culture", label: language === "vi" ? "Văn hóa" : "Culture" },
     { value: "nature", label: language === "vi" ? "Thiên nhiên" : "Nature" },
   ]
+
+  const handleStartChat = (destination: Destination) => {
+    const destinationName = language === "vi" ? destination.name : destination.name_en
+    // Navigate to home with query params
+    router.push(`/?destination=${encodeURIComponent(destinationName)}`)
+  }
 
   return (
     <div className="min-h-screen bg-background">
@@ -189,7 +197,7 @@ export default function DestinationsPage() {
                   </div>
 
                   {/* Region Tag */}
-                  <div className="flex items-center gap-2">
+                  <div className="flex items-center gap-2 mb-4">
                     <span className="text-xs px-2 py-1 rounded bg-primary/10 text-primary">
                       {regions.find((r) => r.value === destination.region)?.label}
                     </span>
@@ -202,6 +210,15 @@ export default function DestinationsPage() {
                       </span>
                     ))}
                   </div>
+
+                  {/* Start Chat Button */}
+                  <button
+                    onClick={() => handleStartChat(destination)}
+                    className="w-full flex items-center justify-center gap-2 bg-primary text-primary-foreground rounded-lg px-4 py-2.5 font-medium hover:opacity-90 transition"
+                  >
+                    <MessageCircle size={16} />
+                    <span>{t("startChat")}</span>
+                  </button>
                 </div>
               </div>
             ))}
