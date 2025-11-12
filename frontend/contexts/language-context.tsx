@@ -23,6 +23,11 @@ const translations = {
     welcomeTitle: "Chào mừng đến với du lịch Việt Nam",
     welcomeSubtitle:
       "Tôi sẽ giúp bạn tìm hiểu về những điểm du lịch đẹp nhất, ẩm thực, văn hóa và trải nghiệm tuyệt vời tại Việt Nam!",
+    deleteConversation: "Xóa cuộc trò chuyện",
+    confirmDelete: "Bạn có chắc chắn muốn xóa cuộc trò chuyện này?",
+    cancel: "Hủy",
+    delete: "Xóa",
+    conversationDeleted: "Đã xóa cuộc trò chuyện",
   },
   en: {
     newChat: "New Chat",
@@ -36,6 +41,11 @@ const translations = {
     welcomeTitle: "Welcome to Vietnam Travel Guide",
     welcomeSubtitle:
       "I'll help you discover the most beautiful attractions, cuisine, culture and amazing experiences across Vietnam!",
+    deleteConversation: "Delete conversation",
+    confirmDelete: "Are you sure you want to delete this conversation?",
+    cancel: "Cancel",
+    delete: "Delete",
+    conversationDeleted: "Conversation deleted",
   },
 }
 
