@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { Plus, MessageSquare, Compass, Settings, Loader2, Trash2, MoreVertical } from "lucide-react"
+import { Plus, MessageSquare, Compass, Settings, Loader2, Trash2, MoreVertical, X } from "lucide-react"
 import { useLanguage } from "@/contexts/language-context"
 import LanguageToggle from "./language-toggle"
 import { apiClient, type ConversationSummary } from "@/lib/api-client"
@@ -11,9 +11,11 @@ interface SidebarProps {
   onNewChat?: () => void
   activeConversationId?: string
   onOpenDestinations?: () => void
+  isOpen?: boolean
+  onClose?: () => void
 }
 
-export default function Sidebar({ onConversationSelect, onNewChat, activeConversationId, onOpenDestinations }: SidebarProps) {
+export default function Sidebar({ onConversationSelect, onNewChat, activeConversationId, onOpenDestinations, isOpen = true, onClose }: SidebarProps) {
   const [conversations, setConversations] = useState<ConversationSummary[]>([])
   const [isLoading, setIsLoading] = useState(false)
   const [deletingId, setDeletingId] = useState<string | null>(null)
@@ -103,17 +105,44 @@ export default function Sidebar({ onConversationSelect, onNewChat, activeConvers
   }
 
   return (
-    <div className="w-64 bg-sidebar border-r border-sidebar-border flex flex-col">
-      {/* Header */}
-      <div className="p-4 border-b border-sidebar-border">
-        <button 
-          onClick={handleNewChat}
-          className="w-full flex items-center justify-center gap-2 bg-primary text-primary-foreground rounded-lg px-4 py-2.5 font-medium hover:opacity-90 transition"
-        >
-          <Plus size={18} />
-          {t("newChat")}
-        </button>
-      </div>
+    <>
+      {/* Mobile overlay */}
+      {isOpen && (
+        <div 
+          className="fixed inset-0 bg-black/50 z-40 lg:hidden"
+          onClick={onClose}
+        />
+      )}
+      
+      {/* Sidebar */}
+      <div className={`
+        fixed lg:relative inset-y-0 left-0 z-50
+        w-64 bg-sidebar border-r border-sidebar-border flex flex-col
+        transform transition-transform duration-300 ease-in-out
+        ${isOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}
+      `}>
+        {/* Header */}
+        <div className="p-4 border-b border-sidebar-border space-y-4">
+          {/* Close button for mobile */}
+          <div className="flex items-center justify-between lg:hidden">
+            <span className="font-semibold text-foreground">{t("menu")}</span>
+            <button
+              onClick={onClose}
+              className="p-2 hover:bg-sidebar-accent rounded-lg transition"
+            >
+              <X size={20} />
+            </button>
+          </div>
+          
+          {/* New Chat Button */}
+          <button 
+            onClick={handleNewChat}
+            className="w-full flex items-center justify-center gap-2 bg-primary text-primary-foreground rounded-lg px-4 py-2.5 font-medium hover:opacity-90 transition"
+          >
+            <Plus size={18} />
+            {t("newChat")}
+          </button>
+        </div>
 
       {/* Navigation */}
       <nav className="flex-1 overflow-y-auto p-4 space-y-2">
@@ -236,6 +265,7 @@ export default function Sidebar({ onConversationSelect, onNewChat, activeConvers
           </div>
         </div>
       )}
-    </div>
+      </div>
+    </>
   )
 }

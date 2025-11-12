@@ -10,6 +10,7 @@ export default function Home() {
   const [activeConversationId, setActiveConversationId] = useState<string | undefined>()
   const [initialMessage, setInitialMessage] = useState<string | undefined>()
   const [isDestinationsModalOpen, setIsDestinationsModalOpen] = useState(false)
+  const [isSidebarOpen, setIsSidebarOpen] = useState(true)
   const searchParams = useSearchParams()
   const router = useRouter()
   const { language } = useLanguage()
@@ -64,6 +65,10 @@ export default function Home() {
     setActiveConversationId(undefined) // Start a new chat
   }
 
+  const handleToggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen)
+  }
+
   return (
     <div className="flex h-screen bg-background">
       <Sidebar 
@@ -71,11 +76,14 @@ export default function Home() {
         onNewChat={handleNewChat}
         activeConversationId={activeConversationId}
         onOpenDestinations={handleOpenDestinations}
+        isOpen={isSidebarOpen}
+        onClose={handleToggleSidebar}
       />
       <ChatArea 
         conversationId={activeConversationId}
         onConversationChange={handleConversationChange}
         initialMessage={initialMessage}
+        onToggleSidebar={handleToggleSidebar}
       />
       <DestinationsModal
         isOpen={isDestinationsModalOpen}

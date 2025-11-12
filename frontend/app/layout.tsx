@@ -9,24 +9,17 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Vietnam Travel Guide - AI Chatbot",
-  description: "Khám phá du lịch Việt Nam cùng trợ lý ảo thông minh",
-  generator: "v0.app",
+  description: "Khám phá du lịch Việt Nam cùng trợ lý ảo thông minh | Discover Vietnam with AI-powered travel assistant",
+  keywords: ["Vietnam", "travel", "chatbot", "AI", "du lịch", "Việt Nam", "trợ lý ảo"],
+  authors: [{ name: "Vietnam Travel Guide" }],
   icons: {
     icon: [
       {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
+        url: "/favicon.svg",
         type: "image/svg+xml",
       },
     ],
-    apple: "/apple-icon.png",
+    apple: "/favicon.svg",
   },
 }
 

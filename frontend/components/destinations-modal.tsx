@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import { useLanguage } from "@/contexts/language-context"
 import { apiClient, type Destination } from "@/lib/api-client"
 import { MapPin, Loader2, X, MessageCircle } from "lucide-react"
+import Logo from "./logo"
 
 interface DestinationsModalProps {
   isOpen: boolean
@@ -91,10 +92,13 @@ export default function DestinationsModal({ isOpen, onClose, onStartChat }: Dest
       >
         {/* Header */}
         <div className="border-b border-border bg-card px-6 py-4">
-          <div className="flex items-center justify-between mb-3">
-            <h2 className="text-2xl font-bold text-foreground">
-              {language === "vi" ? "Khám phá điểm đến" : "Explore Destinations"}
-            </h2>
+          <div className="flex items-center justify-between mb-4">
+            <div className="flex items-center gap-3">
+              <Logo size="md" showText={false} />
+              <h2 className="text-2xl font-bold text-foreground">
+                {language === "vi" ? "Khám phá điểm đến" : "Explore Destinations"}
+              </h2>
+            </div>
             <button
               onClick={onClose}
               className="p-2 rounded-lg hover:bg-muted transition text-muted-foreground hover:text-foreground"

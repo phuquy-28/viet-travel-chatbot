@@ -31,6 +31,7 @@ const translations = {
     startChat: "Bắt đầu chat",
     learnMore: "Tìm hiểu thêm",
     askAbout: "Hỏi về",
+    menu: "Menu",
   },
   en: {
     newChat: "New Chat",
@@ -52,6 +53,7 @@ const translations = {
     startChat: "Start Chat",
     learnMore: "Learn More",
     askAbout: "Ask about",
+    menu: "Menu",
   },
 }
 

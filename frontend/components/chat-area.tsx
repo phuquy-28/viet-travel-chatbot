@@ -1,10 +1,11 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { Send, Mic, Paperclip, Loader2 } from "lucide-react"
+import { Send, Mic, Paperclip, Loader2, Menu } from "lucide-react"
 import { useLanguage } from "@/contexts/language-context"
 import ChatMessage from "./chat-message"
 import WelcomeScreen from "./welcome-screen"
+import Logo from "./logo"
 import { apiClient, type ChatMessage as ChatMessageType } from "@/lib/api-client"
 
 interface Message extends ChatMessageType {
@@ -16,9 +17,10 @@ interface ChatAreaProps {
   conversationId?: string
   onConversationChange?: (id: string) => void
   initialMessage?: string
+  onToggleSidebar?: () => void
 }
 
-export default function ChatArea({ conversationId, onConversationChange, initialMessage }: ChatAreaProps) {
+export default function ChatArea({ conversationId, onConversationChange, initialMessage, onToggleSidebar }: ChatAreaProps) {
   const [messages, setMessages] = useState<Message[]>([])
   const [input, setInput] = useState("")
   const [isLoading, setIsLoading] = useState(false)
@@ -119,9 +121,18 @@ export default function ChatArea({ conversationId, onConversationChange, initial
       {/* Header */}
       <div className="border-b border-border bg-card p-4 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-full bg-gradient-to-br from-accent to-primary flex items-center justify-center text-white font-bold">
-            🇻🇳
-          </div>
+          {/* Toggle Sidebar Button */}
+          <button
+            onClick={onToggleSidebar}
+            className="p-2 hover:bg-muted rounded-lg transition lg:hidden"
+            title={language === "vi" ? "Mở/Đóng menu" : "Toggle menu"}
+          >
+            <Menu size={20} />
+          </button>
+          
+          {/* Logo */}
+          <Logo size="sm" showText={false} />
+          
           <div>
             <h1 className="font-semibold text-foreground">Vietnam Travel Guide</h1>
             <p className="text-xs text-muted-foreground">{t("alwaysHere")}</p>
